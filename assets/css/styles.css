@@ -46,6 +46,7 @@ ul, ol {
     margin-top: 10px;
 }
 
+
 li {
     margin-bottom: 10px;
     padding-left: 15px;
@@ -68,7 +69,6 @@ li::marker {
 
 .hero-title, 
 .hero-description,
-.preparation,
 .ingredients,
 .instructions,
 .nutrition {
@@ -95,7 +95,7 @@ li::marker {
 
 .preparation-title {
     color: var(--Rose-800);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .nutrition-table {
@@ -120,24 +120,40 @@ li::marker {
     padding: 15px;
 }
 
+.attribution {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: var(--Stone-600);
+}
+
 @media (min-width: 600px) {
     body {
-        background-color: var(--Stone-150);
+        background-color: var(--Stone-100);
+        
     }
 
     .container {
+        max-width: 680px;
         background-color: var(--White);
         border-radius: 15px;
-        padding: 20px;
+        padding: 25px;
+        margin: 100px auto;
     }
 
     .hero-title, 
     .hero-description,
-    .preparation,
     .ingredients,
     .instructions,
     .nutrition {
         padding: 0;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .preparation{
+        padding: 24px;
+        margin-bottom: 10px;
     }
 
     .hero-img {
